@@ -1,0 +1,9 @@
+# Core dependencies for voice assistant
+speechrecognition==3.10.0
+pyttsx3==2.90
+pyaudio==0.2.11
+nltk==3.8.1
+python-dateutil==2.8.2
+
+# Optional dependencies
+playsound==1.3.0

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(59, 92, 255, 0.22);
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  .section {
+    @apply py-24;
+  }
+
+  .chip {
+    @apply text-xs font-semibold px-3 py-1.5 rounded-full bg-white/80 backdrop-blur border border-slate-200 text-slate-700;
+  }
+
+  .card {
+    @apply rounded-3xl border border-slate-200/70 bg-white shadow-[0_10px_30px_rgba(2,6,23,0.06)];
+  }
+
+  .card-soft {
+    @apply rounded-3xl border border-slate-200/70 bg-slate-50 shadow-[0_10px_30px_rgba(2,6,23,0.05)];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-[#3B5CFF] text-white font-semibold shadow-sm hover:bg-[#2F4CFF] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3B5CFF] focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full bg-white text-slate-800 font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2;
+  }
+
+  .link {
+    @apply font-semibold text-blue-600 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-200 focus-visible:ring-offset-2 rounded;
+  }
+}
